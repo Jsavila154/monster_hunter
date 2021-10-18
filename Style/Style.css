@@ -1,0 +1,740 @@
+*{
+	margin: 0;
+	padding: 0;
+
+}
+body {
+
+	
+	font-family: arial;
+	background: url(../Imagenes/background.jpg) no-repeat fixed;
+	background-position: bottom;
+	background-size: 100% 87%;
+	
+
+}
+
+
+.logo{
+	min-width: 900px;
+	color: #fff;
+	position: fixed;
+	border: 2px solid-black;	
+	align-items: center;
+	display: flex;
+	width: 100%;
+	height: 150px;
+	transition-property:background;
+	transition-duration: 0.2s; 
+	z-index: 12;
+
+	
+
+}
+ .logo2{
+ 	min-width: 900px;
+	color: #000;
+	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#878787+0,ffffff+25,ffffff+39,ffffff+58,ffffff+69,ffffff+80,878787+100 */
+background: #878787; /* Old browsers */
+background: -moz-linear-gradient(top,  #878787 0%, #ffffff 25%, #ffffff 39%, #ffffff 58%, #ffffff 69%, #ffffff 80%, #878787 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #878787 0%,#ffffff 25%,#ffffff 39%,#ffffff 58%,#ffffff 69%,#ffffff 80%,#878787 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #878787 0%,#ffffff 25%,#ffffff 39%,#ffffff 58%,#ffffff 69%,#ffffff 80%,#878787 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#878787', endColorstr='#878787',GradientType=0 ); /* IE6-9 */
+
+	position: fixed;
+	border: 2px solid-black;	
+	align-items: center;
+	display: flex;
+	width: 100%;
+	height: 120px;
+	transition-property:background;
+	transition-duration: 0.2s; 
+	z-index: 12;
+
+}
+ .logo:hover{
+ 	color: #000;
+	z-index: 11;
+	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#878787+0,ffffff+25,ffffff+39,ffffff+58,ffffff+69,ffffff+80,878787+100 */
+background: #878787; /* Old browsers */
+background: -moz-linear-gradient(top,  #878787 0%, #ffffff 25%, #ffffff 39%, #ffffff 58%, #ffffff 69%, #ffffff 80%, #878787 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #878787 0%,#ffffff 25%,#ffffff 39%,#ffffff 58%,#ffffff 69%,#ffffff 80%,#878787 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #878787 0%,#ffffff 25%,#ffffff 39%,#ffffff 58%,#ffffff 69%,#ffffff 80%,#878787 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#878787', endColorstr='#878787',GradientType=0 ); /* IE6-9 */
+
+		
+}
+
+ .logo h2{
+	transform: translateX(-10%);
+	color: inherit;
+	font-weight: normal;
+	font-size: 2em;
+	margin: auto;
+	transition-property:color;
+	transition-duration: 0.2s; 
+	z-index: 12;
+}
+.sombra {
+	text-shadow: 1px 1px 2px black, 0 0 1em blue, 0 0 0.2em blue;
+}
+
+
+ .logo .mhfu{
+
+	position: absolute;
+	display: block;
+	width: 15%;
+	height: 100px;
+	transform: translateX(40%);
+	background: url(../Imagenes/Logo_MHFU.png);
+	background-size: 100% 100%;
+	z-index: 13;
+}
+ .logo .tomori{
+	transform: translateX(250%);
+	position: absolute;
+	display: block;
+	width: 27%;
+	height: 100px;
+	background: url(../Imagenes/tomori_logo.png);
+	background-size: 100% 100%;
+	z-index: 13;
+}
+section{
+	overflow: hidden;
+	display: block;
+}
+section .vid1, .vid2, .vid3{
+	
+	display: block;
+	width: 100%;
+	height: 700px;
+	
+}
+
+section .vid1 h2, p,
+section .vid2 h2, p,
+section .vid3 h2, p{
+	display: block; 
+	font-weight: normal;
+	position: absolute;
+	transform: translate(20%, 400px);
+	
+}	
+section .vid1 h2,
+section .vid2 h2,
+section .vid3 h2{
+	transform: translate(200px, 310px);
+	animation-name: texto_video_h;
+	animation-duration: 10s; 
+	animation-iteration-count: infinite;
+	animation-timing-function: ease;	
+}
+section .vid1 p,
+section .vid2 p,
+section .vid3 p{
+	transform: translate(200px, 350px);
+	animation-name: texto_video_p;
+	animation-duration: 10s;
+	animation-iteration-count: infinite; 
+	animation-timing-function: ease;
+ 
+}
+@keyframes texto_video_h{
+	0%{
+		opacity: 0;
+		transform: translateX(200px);
+		transform: translate(200px, 310px);
+		
+
+	}	
+	25%{opacity: 1;
+		transform: translateX(200px);
+		transform: translate(50px, 310px);
+
+	}
+	80%{opacity: 1;
+		transform: translateX(200px);
+		transform: translate(50px, 310px);
+
+	}
+	82%{
+		opacity: 0;
+		transform: translateX(200px);
+		transform: translate(200px, 310px);
+	}
+	100%{
+		opacity: 0;
+		transform: translateX(200px);
+		transform: translate(200px, 310px);}
+}
+@keyframes texto_video_p{
+	0%{
+		opacity: 0;
+		transform: translateX(200px);
+		transform: translate(200px, 350px);
+	}	
+	25%{
+		opacity: 1;
+		transform: translateX(200px);
+		transform: translate(50px, 350px);
+	}
+	80%{opacity: 1;
+		transform: translateX(200px);
+		transform: translate(50px, 350px);
+
+
+	}
+	82%{
+		opacity: 0;
+		transform: translateX(200px);
+		transform: translate(200px, 350px);
+	}
+	100%{
+		opacity: 0;
+		transform: translateX(200px);
+		transform: translate(200px, 350px);
+	}
+}
+section .vid1{
+	
+	position: relative;
+	margin-top: 0;
+	background: #B3788A;
+	animation-name: der1;
+	animation-duration: 30s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease;
+
+}
+section .vid2{
+	
+	transform: translateX(-100%);
+	background: #565396;
+	animation-name: der2;
+	animation-duration: 30s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease;
+}
+
+section .vid3{
+
+	background:#2F672E;
+	animation-name: der3;
+	animation-duration: 30s;
+	transform: translateX(-100%);
+	animation-iteration-count: infinite;
+	animation-timing-function: ease;
+}
+
+
+@keyframes der1{
+	0%{
+		transform: translateX(0);
+	}
+	23%{
+		transform: translateX(0);
+	}
+	33%{
+		transform: translateX(100%);
+	}
+	56%{
+		transform: translateX(100%);
+	}
+	66%{
+		transform: translateX(200%);
+	}
+	90%{
+		transform: translateX(-100%);
+	}
+	100%{
+		transform: translateX(0);
+	}
+
+}
+@keyframes der2{
+	0%{transform: translateX(-100%);
+
+	}	
+	23%{
+		transform: translateX(-100%);
+	}
+	33%{
+		transform: translateX(-100%);
+	}
+	56%{
+		transform: translateX(-100%);
+	}
+	66%{
+		transform: translateX(-100%);
+	}
+	90%{
+		transform: translateX(200%);
+	}
+	100%{
+		transform: translateX(200%);
+	}
+
+}
+@keyframes der3{
+	0%{transform: translateX(-100%);
+
+	}	
+	23%{
+		transform: translateX(-100%);
+	}
+	33%{
+		transform: translateX(-100%);
+	}
+	56%{
+		transform: translateX(-100%);
+	}
+	66%{
+		transform: translateX(-100%);
+	}
+	90%{
+		transform: translateX(-100%);
+	}
+	100%{
+		transform: translateX(-100%);
+	}
+
+}
+
+section .contenedor{
+	
+	position: absolute;
+	display: inline-block;
+	width: 90%;
+	min-width: 900px;
+	height: 144px;
+	left: 5%;
+	margin-top: -180px;
+
+
+}
+section .contenedor::before{
+	content: "";
+	transform-origin: left;
+	background: #65EDF2;
+	position: absolute;
+	display: inline-block;
+	width: 96.4%;
+	height: 4px;
+	transform: translateY(-100%);
+	left:1.7%;
+	animation-name: carga;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+
+}
+@keyframes carga{
+	0%{
+		width: 0;
+
+	}
+	72%{
+		width: 96.4%;
+	}
+	90%{
+		width: 0;
+	}
+	100%{
+		width: 0;
+	}
+	
+}
+section .contenedor .cajah{
+	overflow: hidden;
+	margin-left: 20px;
+	float: left;
+	display: inline-block;
+	background: url(../Imagenes/textura_m_oscura.jpg);
+	height: 144px;
+	width: 31%;	
+}
+
+section .contenedor .cajah img{
+	color: #fff;
+	position: absolute;
+	font-weight: normal;
+	transform: translateX(2%);
+	transform: scale(0.7);
+	z-index: 10;
+}
+section .contenedor .cajah video{
+	transform-origin: left;
+	opacity: 0.8;
+	transition-property:opacity, transform;
+	transition-duration: 0.5s;  
+}
+section .contenedor .cajah:hover video{
+	opacity: 1;
+	transform: scale(1.4);
+
+
+}
+section .contenedor .cajah:hover img{
+	opacity: 0;
+}
+section .contenedor .cajah p{
+	position: absolute;
+	font-weight: normal;
+	color: #fff;
+	transform: translateX(256px);
+	margin-top: 50px;
+	font-size: 1.1em;
+}
+section .que_es{
+	align-items: center;
+	display: inline-block;
+	position: relative;
+	width: 100%;
+	height: 590px;
+	
+}
+section .que_es .children1{
+	opacity: 0.8;
+	background: url(../Imagenes/fatalis.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	position: absolute;
+	width: 43%;
+	transform: translate(122%, 45%);
+	height: 300px;
+	transition-property: background, opacity;
+	transition-duration: 2s;
+	
+}
+section .que_es .children1:hover{
+	background: url(../Imagenes/fatalis.gif);
+	opacity: 1;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+
+}
+section .que_es .children2{
+	overflow: hidden;
+	margin: 3.3%;
+	position: absolute;
+	width: 45%;
+	height: 500px;
+	background: rgba(0,0,0,0.3);
+	
+}
+section .que_es .children2::after{
+	
+	content: "";
+	height: 2px;
+	width: 100%;
+	background: #fff;
+	position: absolute;
+	transform: translate(0, 250px);
+
+}
+section .que_es .children2::before{
+	
+	content: "";
+	height: 2px;
+	width: 100%;
+	background: #fff;
+	position: absolute;
+	transform: translate(0, 470px);
+}
+
+section .que_es .children2 p{
+	color: #fff;
+	font-size: 1.2em;
+	transform: translate(0px, 40px);
+	line-height: 30px;
+}
+section .que_es .children2 h2{
+	font-size: 1.6em;
+	color: #fff;
+}
+section .que_es .children2 .ED, .WV{
+	position: absolute;
+	width: 150px;
+	height: 100px;
+}
+
+section .que_es .children2 .ED{
+	transform: translate(50px, 340px);
+	animation-name: ED;
+	animation-duration: 30s;
+	animation-iteration-count: infinite;
+
+}
+section .que_es .children2 .WV{
+	transform: translate(50px, 340px);
+	animation-name: WV;
+	animation-duration: 30s;
+	animation-iteration-count: infinite;
+}
+@keyframes ED{
+	0%{
+		opacity: 0;
+		transform: translate(0px, 340px);
+	}
+	47%{
+		opacity: 0;
+		transform: translate(0px, 340px);
+	}
+	50%{
+		opacity: 1;
+		transform: translate(50px, 340px);
+		
+	}
+	97%{
+		opacity: 1;
+		transform: translate(50px, 340px);
+	}
+	100%{
+		opacity: 0;
+		transform: translate(200px, 344px);
+	}	
+}
+@keyframes WV{
+	0%{
+		opacity: 1;
+	}
+	47%{
+		opacity: 1;
+		transform: translate(50px, 340px);
+	}
+	50%{
+		opacity: 0;
+		transform: translate(200px, 340px);
+	}
+	97%{
+		opacity: 0;
+		transform: translate(0px, 340px);
+	}
+	100%{
+		opacity: 1;
+		transform: translate(50px, 340px);
+	}	
+}
+section .Nuevas_caracteristicas h2 span,
+section .Nuevas_caracteristicas ul li,
+section .NCarmas h2 span,
+section .NCarmas ul li,
+section .NCequipo h2 span,
+section .NCequipo ul li{
+	font-size: 1.2em;
+	color: #fff;
+	
+}  
+
+
+section .Nuevas_caracteristicas,
+section .NCarmas,
+section .NCequipo{
+	position: relative;
+	text-align: center;
+	height: 100%;
+	width: 100%;
+	/*background-color: #330DC0;
+	opacity: 0.3;*/
+}
+
+section .Nuevas_caracteristicas ul,
+section .NCarmas ul,
+section .NCequipo ul{
+	list-style: none;
+}
+section .Nuevas_caracteristicas ul,
+section .NCarmas ul,
+section .NCequipo ul{
+	display: none;
+
+}
+section .Nuevas_caracteristicas:hover > ul,
+section .NCarmas:hover > ul,
+section .NCequipo:hover > ul{
+	display: block;
+}
+
+section ul li{
+	z-index: 2;
+	text-align: left;
+	background: rgba(0,0,0,0.5);
+	width: 90%;
+	margin-bottom: 3px;
+	transform: translateX(30px);
+}
+section .Nuevas_caracteristicas::after,
+section .NCarmas::after,
+section .NCequipo::after{
+	position: absolute;
+	content: "";
+	height: 100%;
+	width: 110%;
+	top:62px;
+	left: -10px;
+	opacity: 1;
+		
+}
+section .Nuevas_caracteristicas::after{
+	background: url(../Imagenes/zinogre.jpg) no-repeat;
+	background-size: 100% 100%;
+	transition-property: opacity;
+	transition-duration: 0.8s;
+
+}
+section .NCarmas::after{
+	background: url(../Imagenes/rathalos.jpg) no-repeat;
+	background-size: 100% 100%;
+	transition-property: opacity;
+	transition-duration: 0.8s;
+
+}
+section .NCequipo::after{
+	background: url(../Imagenes/xeno.jpg) no-repeat;
+	background-size: 100% 100%;
+	transition-property: opacity;
+	transition-duration: 0.8s;
+
+}
+section .Nuevas_caracteristicas:hover::after,
+section .NCarmas:hover::after,
+section .NCequipo:hover::after{
+	opacity: 0;
+}
+
+section span{
+	line-height: 2.2;
+	justify-content: center;
+	transform: translate(-17px, -5px);
+	display: block;
+	background: #000;
+	width: 105%;
+	height: 70px;
+}
+.caja3 span{
+	line-height: 1.2;
+}
+section .caja1{
+	background: url(../Imagenes/alatreon.jpg);
+}
+section .caja2{
+	background: url(../Imagenes/fatalisN.jpg);
+}
+section .caja3{
+	background: url(../Imagenes/nergigante.jpg);
+}
+section .caja1,
+section .caja2,
+section .caja3{
+	width: 60%;
+	background-size: 100% 95%;	
+	background-repeat: no-repeat;
+	float: right;
+	height: 600px;
+	margin-right: 30px;
+	margin-bottom: 20px;
+	background-position: bottom;
+	
+}
+section .caja1,
+section .caja2,
+section .caja3{
+	overflow: hidden;
+	width: 60%;
+	background-size: 100% 90%;	
+	background-repeat: no-repeat;
+	float: right;
+	height: 600px;
+	margin-right: 30px;
+	margin-bottom: 20px;
+	background-position: bottom;
+	padding: 3px 10px;
+	border: black 5px solid;
+	border-top-left-radius: 50px;
+	border-bottom-right-radius: 30px;
+	transition: background;
+	transition-duration: 1s;
+}
+section .caja1:hover,
+section .caja2:hover,
+section .caja3:hover{
+	overflow: hidden;
+	width: 60%;
+	transform: rotate();
+	background-size: 120% 108%;	
+	background-repeat: no-repeat;
+	float: right;
+	height: 600px;
+	margin-right: 30px;
+	margin-bottom: 20px;
+	background-position: bottom;
+	padding: 3px 10px;
+	border: black 5px solid;
+	border-top-left-radius: 50px;
+	border-bottom-right-radius: 30px;
+}
+
+.nav {
+	left: 30px;
+	top: -1875px;
+	position: relative;
+	width: 110px;
+	height: 600px;
+	
+	
+	
+}
+.nav2 {
+	left: 30px;
+	top:200px;
+	position: fixed;
+	width: 110px;
+	height: 600px;
+	
+	z-index: 12;
+	
+}
+
+aside img{
+	width: 110px;
+	height: 110px;
+
+}
+
+aside ul li{
+	line-height: 6;
+	list-style: none;
+
+}
+.pie{
+	width: 100%;
+	height: 150px;
+	background: white;
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
